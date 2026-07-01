@@ -11,9 +11,9 @@ import kotlin.text.iterator
 object ExpressionParser {
     private const val OPERATORS = "+-*/^!,"
     private const val DELIMITERS = "() $OPERATORS"
-    const val ERROR_BRACKETS = "Скобки не согласованы в выражении"
-    const val ERROR_EXPRESSION = "Неверное выражение"
-    const val ERROR_NUMBER = "Неправильное число в выражении"
+    const val ERROR_BRACKETS = "Parentheses are mismatched."
+    const val ERROR_EXPRESSION = "Invalid expression"
+    const val ERROR_NUMBER = "Incorrect number in the expression"
 
     private fun isDelimiter(token: String): Boolean {
         if (token.length != 1)
